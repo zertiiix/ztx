@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INESSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff4d4d;
+            font-size: 3em;
+        }
+
+        .heart {
+            font-size: 5em;
+            color: #ff4d4d;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .heart:hover {
+            transform: scale(1.1);
+        }
+
+        .message {
+            font-size: 2em;
+            color: #333;
+            display: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COUCOU</h1>
+        <p>Cliques ici ;) :</p>
+        <span class="heart" onclick="showMessage()">❤️</span>
+        <p class="message" id="message">Je t'aime !</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            var message = document.getElementById('message');
+            message.style.display = 'block'; // Affiche le message
+        }
+    </script>
+</body>
+</html>
